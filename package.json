@@ -25,7 +25,7 @@
   "scripts": {
     "prepublishOnly": "tsc",
     "build": "tsc -p tsconfig.json",
-    "docgen": "npm run build && typedoc ./src --plugin typedoc-rhineai-theme --out ./docs && node dist/docgen",
+    "docgen": "npm run eslint && npm run build && typedoc ./src --plugin typedoc-rhineai-theme --out ./docs && node dist/docgen",
     "eslint": "eslint ./src/**/* --fix",
     "commit": "npm run docgen && node dist/@build/commit",
     "test": "npm run build && node dist/__scripts__/index"
