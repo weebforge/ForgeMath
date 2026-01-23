@@ -1,0 +1,4 @@
+import { NativeFunction, ArgType } from "@tryforge/forgescript";
+declare const _default: NativeFunction<[import("@tryforge/forgescript").IArg<ArgType.Number, true, false, import("@tryforge/forgescript").EnumLike>, import("@tryforge/forgescript").IArg<ArgType.Number, true, false, import("@tryforge/forgescript").EnumLike>], true>;
+export default _default;
+//# sourceMappingURL=bitAnd.d.ts.map

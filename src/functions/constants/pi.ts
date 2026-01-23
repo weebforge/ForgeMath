@@ -3,9 +3,9 @@ import { ForgeMath } from "../../structures/ForgeMath"
 
 export default new NativeFunction({
   name: "$pi",
-    version: "1.0.0",
-  description: "Returns the constant pi",
   aliases: ["$π"],
+  description: "Returns the constant pi",
+  version: "1.0.0",
   unwrap: false,
   output: ArgType.Number,
   execute(ctx) {
