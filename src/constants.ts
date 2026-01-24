@@ -5,7 +5,7 @@ export const Constants = {
   Pi: 3.141592653589793,
 
   /**
-   * The number e is a mathematical constant, approximately equal to 2.71828, that is the base of the natural logarithm and exponential function. 
+   * The number e is a mathematical constant, approximately equal to 2.71828, that is the base of the natural logarithm and exponential function.
    */
   E: 2.718281828459045,
 

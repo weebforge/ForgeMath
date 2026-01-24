@@ -8,7 +8,7 @@ export default new NativeFunction({
   args: [
     Arg.requiredNumber("x", "The number to check."),
     Arg.requiredNumber("min", "Minimum value."),
-    Arg.requiredNumber("max", "Maximum value.")
+    Arg.requiredNumber("max", "Maximum value."),
   ],
   brackets: true,
   unwrap: true,

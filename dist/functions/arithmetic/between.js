@@ -9,7 +9,7 @@ exports.default = new forgescript_1.NativeFunction({
     args: [
         forgescript_1.Arg.requiredNumber("x", "The number to check."),
         forgescript_1.Arg.requiredNumber("min", "Minimum value."),
-        forgescript_1.Arg.requiredNumber("max", "Maximum value.")
+        forgescript_1.Arg.requiredNumber("max", "Maximum value."),
     ],
     brackets: true,
     unwrap: true,

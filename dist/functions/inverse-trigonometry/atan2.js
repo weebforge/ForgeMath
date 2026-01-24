@@ -8,7 +8,7 @@ exports.default = new forgescript_1.NativeFunction({
     args: [
         forgescript_1.Arg.requiredNumber("y", "Y coordinate."),
         forgescript_1.Arg.requiredNumber("x", "X coordinate."),
-        forgescript_1.Arg.optionalBoolean("asDeg", "Set to true to return degrees.")
+        forgescript_1.Arg.optionalBoolean("asDeg", "Set to true to return degrees."),
     ],
     brackets: true,
     unwrap: true,

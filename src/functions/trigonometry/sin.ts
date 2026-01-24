@@ -7,7 +7,7 @@ export default new NativeFunction({
   version: "1.0.0",
   args: [
     Arg.requiredNumber("angle", "Angle to find sine of."),
-    Arg.optionalBoolean("asDeg", "Set to true if the angle is in degrees.")
+    Arg.optionalBoolean("asDeg", "Set to true if the angle is in degrees."),
   ],
   brackets: true,
   unwrap: true,

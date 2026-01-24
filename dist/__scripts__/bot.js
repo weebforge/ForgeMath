@@ -9,9 +9,7 @@ const client = new forgescript_1.ForgeClient({
     token: process.env.Token,
     intents: ["MessageContent", "GuildMessages", "Guilds"],
     events: ["messageCreate", "clientReady"],
-    extensions: [
-        new ForgeMath_1.ForgeMath()
-    ],
+    extensions: [new ForgeMath_1.ForgeMath()],
 });
 client.commands.add({
     name: "ping",

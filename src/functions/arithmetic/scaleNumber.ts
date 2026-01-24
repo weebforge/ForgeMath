@@ -10,7 +10,7 @@ export default new NativeFunction({
     Arg.requiredNumber("inMin", "Input range minimum."),
     Arg.requiredNumber("inMax", "Input range maximum."),
     Arg.requiredNumber("outMin", "Output range minimum."),
-    Arg.requiredNumber("outMax", "Output range maximum.")
+    Arg.requiredNumber("outMax", "Output range maximum."),
   ],
   brackets: true,
   unwrap: true,

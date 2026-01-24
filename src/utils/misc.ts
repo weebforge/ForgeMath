@@ -15,7 +15,6 @@ export function fibonacci(n: number): number {
   return result
 }
 
-
 export function gcd(a: number, b: number): number {
   if (!Number.isInteger(a) || !Number.isInteger(b)) {
     throw new Error("gcd: both arguments must be integers.")

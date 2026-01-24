@@ -4,9 +4,7 @@ export default new NativeFunction({
   name: "$bitNot",
   description: "Performs a bitwise NOT operation on an integer.",
   version: "1.0.0",
-  args: [
-    Arg.requiredNumber("a", "Integer to invert.")
-  ],
+  args: [Arg.requiredNumber("a", "Integer to invert.")],
   brackets: true,
   unwrap: true,
   output: ArgType.Number,

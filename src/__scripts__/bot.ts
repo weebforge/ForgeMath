@@ -8,9 +8,7 @@ const client = new ForgeClient({
   token: process.env.Token!,
   intents: ["MessageContent", "GuildMessages", "Guilds"],
   events: ["messageCreate", "clientReady"],
-  extensions: [
-    new ForgeMath()
-  ],
+  extensions: [new ForgeMath()],
 })
 
 client.commands.add({

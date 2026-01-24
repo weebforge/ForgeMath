@@ -45,7 +45,7 @@ async function main() {
     let escapedMsg = msg;
     if ((0, os_1.platform)() === "darwin")
         escapedMsg = escapedMsg.replace(/\$/g, "\\$");
-    (0, child_process_1.execSync)("git branch -M " + branch + " && git add . && git commit -m \"" + escapedMsg + "\" && git push -u origin " + branch, {
+    (0, child_process_1.execSync)("git branch -M " + branch + ' && git add . && git commit -m "' + escapedMsg + '" && git push -u origin ' + branch, {
         stdio: "inherit",
     });
 }

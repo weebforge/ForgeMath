@@ -10,8 +10,12 @@ export default new NativeFunction({
   unwrap: true,
   output: ArgType.Number,
   execute(ctx, [n]) {
-    if (!Number.isInteger(n)) {return this.customError("n must be an integer.")}
-    if (n < 0){ return this.customError("n must be ≥ 0.")}
+    if (!Number.isInteger(n)) {
+      return this.customError("n must be an integer.")
+    }
+    if (n < 0) {
+      return this.customError("n must be ≥ 0.")
+    }
 
     return this.success(fibonacci(n))
   },

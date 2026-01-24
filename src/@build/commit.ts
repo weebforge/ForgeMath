@@ -49,7 +49,7 @@ async function main() {
   if (platform() === "darwin") escapedMsg = escapedMsg.replace(/\$/g, "\\$")
 
   execSync(
-    "git branch -M " + branch + " && git add . && git commit -m \"" + escapedMsg + "\" && git push -u origin " + branch,
+    "git branch -M " + branch + ' && git add . && git commit -m "' + escapedMsg + '" && git push -u origin ' + branch,
     {
       stdio: "inherit",
     }

@@ -7,7 +7,7 @@ export default new NativeFunction({
   version: "1.0.0",
   args: [
     Arg.requiredNumber("x", "Value between -1 and 1."),
-    Arg.optionalBoolean("asDeg", "Set to true to return degrees.")
+    Arg.optionalBoolean("asDeg", "Set to true to return degrees."),
   ],
   brackets: true,
   unwrap: true,

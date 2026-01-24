@@ -5,10 +5,7 @@ exports.default = new forgescript_1.NativeFunction({
     name: "$hasFlag",
     description: "Checks whether a bit flag is set.",
     version: "1.0.0",
-    args: [
-        forgescript_1.Arg.requiredNumber("value", "Integer value."),
-        forgescript_1.Arg.requiredNumber("flag", "Flag to check.")
-    ],
+    args: [forgescript_1.Arg.requiredNumber("value", "Integer value."), forgescript_1.Arg.requiredNumber("flag", "Flag to check.")],
     brackets: true,
     unwrap: true,
     output: forgescript_1.ArgType.Boolean,

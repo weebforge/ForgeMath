@@ -11,7 +11,7 @@ exports.default = new forgescript_1.NativeFunction({
         forgescript_1.Arg.requiredNumber("inMin", "Input range minimum."),
         forgescript_1.Arg.requiredNumber("inMax", "Input range maximum."),
         forgescript_1.Arg.requiredNumber("outMin", "Output range minimum."),
-        forgescript_1.Arg.requiredNumber("outMax", "Output range maximum.")
+        forgescript_1.Arg.requiredNumber("outMax", "Output range maximum."),
     ],
     brackets: true,
     unwrap: true,
