@@ -21,7 +21,7 @@ function lerp(a, b, t) {
     return a + (b - a) * t;
 }
 function scaleNumber(x, inMin, inMax, outMin, outMax) {
-    return outMin + (x - inMin) * (outMax - outMin) / (inMax - inMin);
+    return outMin + ((x - inMin) * (outMax - outMin)) / (inMax - inMin);
 }
 function between(x, min, max) {
     if (min > max) {

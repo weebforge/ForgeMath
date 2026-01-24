@@ -6,10 +6,7 @@ exports.default = new forgescript_1.NativeFunction({
     name: "$gcd",
     description: "Returns the greatest common divisor of two integers.",
     version: "1.0.0",
-    args: [
-        forgescript_1.Arg.requiredNumber("a", "First integer."),
-        forgescript_1.Arg.requiredNumber("b", "Second integer.")
-    ],
+    args: [forgescript_1.Arg.requiredNumber("a", "First integer."), forgescript_1.Arg.requiredNumber("b", "Second integer.")],
     brackets: true,
     unwrap: true,
     output: forgescript_1.ArgType.Number,

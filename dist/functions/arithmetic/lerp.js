@@ -9,7 +9,7 @@ exports.default = new forgescript_1.NativeFunction({
     args: [
         forgescript_1.Arg.requiredNumber("a", "Starting value."),
         forgescript_1.Arg.requiredNumber("b", "Ending value."),
-        forgescript_1.Arg.requiredNumber("t", "Interpolation factor (usually between 0 and 1).")
+        forgescript_1.Arg.requiredNumber("t", "Interpolation factor (usually between 0 and 1)."),
     ],
     brackets: true,
     unwrap: true,

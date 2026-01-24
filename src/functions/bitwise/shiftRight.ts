@@ -7,7 +7,7 @@ export default new NativeFunction({
   args: [
     Arg.requiredNumber("a", "Integer to shift."),
     Arg.requiredNumber("b", "Shift amount."),
-    Arg.optionalBoolean("unsigned", "Set to true for unsigned shift.")
+    Arg.optionalBoolean("unsigned", "Set to true for unsigned shift."),
   ],
   brackets: true,
   unwrap: true,
@@ -20,6 +20,6 @@ export default new NativeFunction({
       return this.customError("b must be an integer.")
     }
 
-    return this.success(unsigned === true ? (a >>> b) : (a >> b))
+    return this.success(unsigned === true ? a >>> b : a >> b)
   },
 })

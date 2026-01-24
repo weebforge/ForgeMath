@@ -1,9 +1,9 @@
 import { NativeFunction, Arg, ArgType } from "@tryforge/forgescript"
-import { factorial } from "../../utils/misc"
+import { fibonacci } from "../../utils/misc"
 
 export default new NativeFunction({
-  name: "$factorial",
-  description: "Returns the factorial of an integer (n!).",
+  name: "$fibonacci",
+  description: "Returns the nth fibonacci number.",
   version: "1.0.0",
   args: [Arg.requiredNumber("n", "Integer ≥ 0.")],
   brackets: true,
@@ -17,6 +17,6 @@ export default new NativeFunction({
       return this.customError("n must be ≥ 0.")
     }
 
-    return this.success(factorial(n))
+    return this.success(fibonacci(n))
   },
 })

@@ -4,10 +4,7 @@ export default new NativeFunction({
   name: "$bitAnd",
   description: "Performs a bitwise AND operation on two integers.",
   version: "1.0.0",
-  args: [
-    Arg.requiredNumber("a", "First integer."),
-    Arg.requiredNumber("b", "Second integer.")
-  ],
+  args: [Arg.requiredNumber("a", "First integer."), Arg.requiredNumber("b", "Second integer.")],
   brackets: true,
   unwrap: true,
   output: ArgType.Number,

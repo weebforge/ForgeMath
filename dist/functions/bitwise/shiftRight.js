@@ -8,7 +8,7 @@ exports.default = new forgescript_1.NativeFunction({
     args: [
         forgescript_1.Arg.requiredNumber("a", "Integer to shift."),
         forgescript_1.Arg.requiredNumber("b", "Shift amount."),
-        forgescript_1.Arg.optionalBoolean("unsigned", "Set to true for unsigned shift.")
+        forgescript_1.Arg.optionalBoolean("unsigned", "Set to true for unsigned shift."),
     ],
     brackets: true,
     unwrap: true,
@@ -20,7 +20,7 @@ exports.default = new forgescript_1.NativeFunction({
         if (!Number.isInteger(b)) {
             return this.customError("b must be an integer.");
         }
-        return this.success(unsigned === true ? (a >>> b) : (a >> b));
+        return this.success(unsigned === true ? a >>> b : a >> b);
     },
 });
 //# sourceMappingURL=shiftRight.js.map

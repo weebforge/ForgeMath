@@ -1,5 +1,5 @@
 export const fibCache = new Map<number, number>()
-
+export const factCache = new Map<number, number>()
 export function fibonacci(n: number): number {
   if (!Number.isInteger(n) || n < 0) {
     throw new Error("fibonacci: n must be a non-negative integer.")
@@ -15,6 +15,19 @@ export function fibonacci(n: number): number {
   return result
 }
 
+export function factorial(n: number): number {
+  if (!Number.isInteger(n) || n < 0) {
+    throw new Error("factorial: n must be a non-negative integer.")
+  }
+
+  if (n === 0) return 1
+
+  if (factCache.has(n)) return factCache.get(n)!
+
+  const result = n * factorial(n - 1)
+  factCache.set(n, result)
+  return result
+}
 
 export function gcd(a: number, b: number): number {
   if (!Number.isInteger(a) || !Number.isInteger(b)) {

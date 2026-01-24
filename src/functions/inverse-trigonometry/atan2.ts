@@ -7,7 +7,7 @@ export default new NativeFunction({
   args: [
     Arg.requiredNumber("y", "Y coordinate."),
     Arg.requiredNumber("x", "X coordinate."),
-    Arg.optionalBoolean("asDeg", "Set to true to return degrees.")
+    Arg.optionalBoolean("asDeg", "Set to true to return degrees."),
   ],
   brackets: true,
   unwrap: true,

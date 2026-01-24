@@ -1,5 +1,5 @@
 export function clamp(x: number, min?: number, max?: number) {
-  if(min === undefined) {
+  if (min === undefined) {
     return max === undefined ? x : Math.max(x, max)
   }
   if (max === undefined) {
@@ -16,14 +16,8 @@ export function clamp(x: number, min?: number, max?: number) {
 export function lerp(a: number, b: number, t: number) {
   return a + (b - a) * t
 }
-export function scaleNumber(
-  x: number,
-  inMin: number,
-  inMax: number,
-  outMin: number,
-  outMax: number
-) {
-  return outMin + (x - inMin) * (outMax - outMin) / (inMax - inMin)
+export function scaleNumber(x: number, inMin: number, inMax: number, outMin: number, outMax: number) {
+  return outMin + ((x - inMin) * (outMax - outMin)) / (inMax - inMin)
 }
 export function between(x: number, min: number, max: number) {
   if (min > max) {

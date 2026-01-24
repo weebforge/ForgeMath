@@ -5,10 +5,7 @@ exports.default = new forgescript_1.NativeFunction({
     name: "$shiftLeft",
     description: "Shifts bits to the left by a given amount.",
     version: "1.0.0",
-    args: [
-        forgescript_1.Arg.requiredNumber("a", "Integer to shift."),
-        forgescript_1.Arg.requiredNumber("b", "Shift amount.")
-    ],
+    args: [forgescript_1.Arg.requiredNumber("a", "Integer to shift."), forgescript_1.Arg.requiredNumber("b", "Shift amount.")],
     brackets: true,
     unwrap: true,
     output: forgescript_1.ArgType.Number,

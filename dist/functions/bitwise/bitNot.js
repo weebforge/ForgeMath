@@ -5,9 +5,7 @@ exports.default = new forgescript_1.NativeFunction({
     name: "$bitNot",
     description: "Performs a bitwise NOT operation on an integer.",
     version: "1.0.0",
-    args: [
-        forgescript_1.Arg.requiredNumber("a", "Integer to invert.")
-    ],
+    args: [forgescript_1.Arg.requiredNumber("a", "Integer to invert.")],
     brackets: true,
     unwrap: true,
     output: forgescript_1.ArgType.Number,

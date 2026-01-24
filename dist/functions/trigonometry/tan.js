@@ -8,7 +8,7 @@ exports.default = new forgescript_1.NativeFunction({
     version: "1.0.0",
     args: [
         forgescript_1.Arg.requiredNumber("angle", "Angle to find tangent of."),
-        forgescript_1.Arg.optionalBoolean("asDeg", "Set to true if the angle is in degrees.")
+        forgescript_1.Arg.optionalBoolean("asDeg", "Set to true if the angle is in degrees."),
     ],
     brackets: true,
     unwrap: true,

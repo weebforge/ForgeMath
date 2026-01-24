@@ -8,7 +8,7 @@ export default new NativeFunction({
   args: [
     Arg.requiredNumber("a", "Starting value."),
     Arg.requiredNumber("b", "Ending value."),
-    Arg.requiredNumber("t", "Interpolation factor (usually between 0 and 1).")
+    Arg.requiredNumber("t", "Interpolation factor (usually between 0 and 1)."),
   ],
   brackets: true,
   unwrap: true,
