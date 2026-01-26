@@ -1,6 +1,6 @@
 {
-  "name": "@weebforge/forge.math",
-  "version": "1.0.0",
+  "name": "@weebforge/math",
+  "version": "1.0.1",
   "description": "Math utilities for ForgeScript — clean, fast, and expressive.",
   "keywords": [
     "ForgeMath",
