@@ -1,10 +1,20 @@
 {
-  "name": "@weebforge/forge.math",
-  "version": "1.0.0",
+  "name": "@weebforge/math",
+  "version": "1.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Math utilities for ForgeScript — clean, fast, and expressive.",
   "keywords": [
     "ForgeMath",
     "math",
+    "weebforge",
+    "weeb",
+    "calculus",
+    "expressions",
+    "utilities",
+    "arithmetic",
+    "calculation",
     "forge",
     "forgescript",
     "tryforge"

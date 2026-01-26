@@ -15,8 +15,8 @@ npm install github:weebforge/ForgeMath#dev
 ## Setup
 Here is a small setup with an example code.
 ```ts
-// import { ForgeMath } from "@weebforge/forge.math";
-const { ForgeMath } = require("@weebforge/forge.math");
+// import { ForgeMath } from "@weebforge/math";
+const { ForgeMath } = require("@weebforge/math");
 
 const client = new ForgeClient({
   extensions: [
