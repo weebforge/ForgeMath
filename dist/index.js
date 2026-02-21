@@ -15,5 +15,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./structures/ForgeMath"), exports);
+__exportStar(require("./structures/Vector"), exports);
+__exportStar(require("./structures/VectorManager"), exports);
 __exportStar(require("./constants"), exports);
 //# sourceMappingURL=index.js.map
