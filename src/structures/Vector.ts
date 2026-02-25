@@ -50,6 +50,40 @@ export class Vector {
     return this.scale(1 / mag)
   }
 
+  cross(other: Vector): Vector {
+    if (this.dimension !== 3 || other.dimension !== 3) {
+      throw new Error("Cross product is only defined for 3D vectors.")
+    }
+
+    const [x1, y1, z1] = this.values
+    const [x2, y2, z2] = other.values
+
+    return new Vector([y1 * z2 - z1 * y2, z1 * x2 - x1 * z2, x1 * y2 - y1 * x2])
+  }
+  projectOnto(other: Vector): Vector {
+    this.#assertSameDimension(other)
+
+    const denom = other.dot(other)
+    if (denom === 0) throw new Error("Cannot project onto zero vector.")
+
+    const scalar = this.dot(other) / denom
+    return other.scale(scalar)
+  }
+  angle(other: Vector): number {
+    this.#assertSameDimension(other)
+
+    const mag1 = this.magnitude()
+    const mag2 = other.magnitude()
+
+    if (mag1 === 0 || mag2 === 0) throw new Error("Cannot compute angle with zero vector.")
+
+    const cosTheta = this.dot(other) / (mag1 * mag2)
+
+    const clamped = Math.max(-1, Math.min(1, cosTheta))
+
+    return Math.acos(clamped) // radians
+  }
+
   clone(): Vector {
     return new Vector(this.values)
   }
