@@ -5,7 +5,7 @@ const VectorManager_1 = require("../../structures/VectorManager");
 exports.default = new forgescript_1.NativeFunction({
     name: "$deleteVector",
     description: "Deletes a vector by name.",
-    version: "1.0.0",
+    version: "1.0.1",
     args: [forgescript_1.Arg.requiredString("name", "Vector name")],
     brackets: true,
     unwrap: true,

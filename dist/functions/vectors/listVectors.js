@@ -9,7 +9,7 @@ const array_1 = __importDefault(require("@tryforge/forgescript/dist/functions/ar
 exports.default = new forgescript_1.NativeFunction({
     name: "$listVectors",
     description: "Lists all stored vector names.",
-    version: "1.0.0",
+    version: "1.0.1",
     args: [forgescript_1.Arg.optionalString("sep", "Seperator to use")],
     brackets: false,
     unwrap: true,

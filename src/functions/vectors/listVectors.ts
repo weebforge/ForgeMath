@@ -5,7 +5,7 @@ import array from "@tryforge/forgescript/dist/functions/array"
 export default new NativeFunction({
   name: "$listVectors",
   description: "Lists all stored vector names.",
-  version: "1.0.0",
+  version: "1.0.1",
   args: [Arg.optionalString("sep", "Seperator to use")],
   brackets: false,
   unwrap: true,

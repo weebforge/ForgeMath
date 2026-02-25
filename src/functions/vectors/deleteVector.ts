@@ -4,7 +4,7 @@ import { VectorManager } from "../../structures/VectorManager"
 export default new NativeFunction({
   name: "$deleteVector",
   description: "Deletes a vector by name.",
-  version: "1.0.0",
+  version: "1.0.1",
   args: [Arg.requiredString("name", "Vector name")],
   brackets: true,
   unwrap: true,
