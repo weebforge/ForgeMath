@@ -10,6 +10,8 @@ exports.default = new forgescript_1.NativeFunction({
     unwrap: true,
     output: forgescript_1.ArgType.Number,
     execute(ctx, [x]) {
+        if (x !== 0)
+            return this.customError("Cant divide by zero");
         return this.success(1 / x);
     },
 });

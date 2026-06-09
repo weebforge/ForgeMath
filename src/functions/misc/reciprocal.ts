@@ -9,6 +9,7 @@ export default new NativeFunction({
   unwrap: true,
   output: ArgType.Number,
   execute(ctx, [x]) {
+    if (x !== 0) return this.customError("Cant divide by zero")
     return this.success(1 / x)
   },
 })
