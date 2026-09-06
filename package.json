@@ -1,6 +1,6 @@
 {
   "name": "@weebforge/math",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Math utilities for ForgeScript — clean, fast, and expressive.",
   "keywords": [
     "ForgeMath",
@@ -31,7 +31,7 @@
     "test": "npm run build && node dist/__scripts__/index"
   },
   "devDependencies": {
-    "@tryforge/forgescript": "github:tryforge/ForgeScript#dev",
+    "@tryforge/forgescript": "github:tryforge/forgescript#dev",
     "@types/node": "^25.0.9",
     "@typescript-eslint/eslint-plugin": "^8.53.0",
     "@typescript-eslint/parser": "^8.53.0",
